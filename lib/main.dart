@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:news_app/screens/MusicsPage.dart';
 
 void main() {
   runApp(const MyApp());
@@ -15,7 +16,8 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.yellowAccent),
       ),
-      home: const MyHomePage(title: 'Flutter Demo Home Page'),
+      home: const MyHomePage(title: 'Listen to Free songs ad free'),
+      routes: {'/musics': (context) => MusicsPage()},
     );
   }
 }
@@ -68,7 +70,7 @@ class BlackComponent extends StatelessWidget {
   Widget build(BuildContext context) {
     return Text(
       "This is the black component",
-      style: TextStyle(fontStyle: FontStyle.italic , color: Colors.red),
+      style: TextStyle(fontStyle: FontStyle.italic, color: Colors.red),
     );
   }
 }
